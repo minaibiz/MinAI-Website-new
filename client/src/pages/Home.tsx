@@ -193,7 +193,7 @@ export default function Home() {
                     <img
                       src={partner.img}
                       alt={partner.name}
-                      className="h-7 md:h-10 w-auto transition-transform duration-300 hover:scale-105"
+                      className="h-5 md:h-7 w-auto transition-transform duration-300 hover:scale-105"
                     />
                   </div>
                 ))}
