@@ -27,7 +27,6 @@ export function Navbar() {
   }, [location]);
 
   const navLinks = [
-    { name: "Homepage", href: "/" },
     { name: "Pricing", href: "/pricing" },
     { name: "Testimonials", href: "/testimonials" },
     { name: "Our Works", href: "/works" },
@@ -43,6 +42,12 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          <Link
+            href="/"
+            className={`text-sm font-bold transition-colors hover:text-blue-700 ${location === "/" ? "text-blue-700" : "text-slate-600"}`}
+          >
+            Homepage
+          </Link>
           <div
             className="relative group"
             onMouseEnter={() => setProductsOpen(true)}
@@ -126,6 +131,12 @@ export function Navbar() {
             className="md:hidden bg-white border-b border-black/5 overflow-hidden shadow-2xl"
           >
             <div className="px-6 py-8 flex flex-col gap-6">
+              <Link
+                href="/"
+                className="text-lg font-bold text-foreground block"
+              >
+                Homepage
+              </Link>
               <div className="space-y-4">
                 <div className="text-xs font-bold text-muted-foreground tracking-widest uppercase">Products</div>
                 <div className="pl-4 space-y-4 border-l-2 border-black/5">
