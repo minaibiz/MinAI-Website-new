@@ -490,7 +490,7 @@ export default function Home() {
                 image: "/industry-2.png"
               },
               {
-                title: "Real Estate Brokerages",
+                title: "Agencies &\nBrokerages",
                 sub: "Real Estate, Mortgage, Insurance",
                 image: "/industry-3.png"
               },
