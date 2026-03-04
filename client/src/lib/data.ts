@@ -2,6 +2,7 @@ import {
   Globe, Inbox, Star, PhoneMissed, Phone,
   MousePointerClick, Search, MessageSquare
 } from "lucide-react";
+import websiteGif from "@assets/Website.gif";
 
 export interface ProductStat {
   label: string;
@@ -34,6 +35,7 @@ export interface Product {
   title: string;
   subtitle: string;
   icon: any;
+  iconImage?: string;
   description: string;
   details: string;
   benefits: string[];
@@ -50,6 +52,7 @@ export const products: Product[] = [
     title: "Talking Website",
     subtitle: "Get a lead-generating Website in just days.",
     icon: Globe,
+    iconImage: websiteGif,
     description: "High-converting funnels and websites built into one platform.",
     details: "Stop relying on static brochures. We build dynamic, high-converting websites optimized for speed, SEO, and immediate lead capture.",
     benefits: ["Optimized for conversions", "Integrated forms & chat", "Blazing fast load speeds"],

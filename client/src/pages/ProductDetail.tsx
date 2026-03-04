@@ -83,7 +83,11 @@ export default function ProductDetail() {
                   </div>
 
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-[0.05] pointer-events-none">
-                    <product.icon size={200} className="text-white" />
+                    {product.iconImage ? (
+                      <img src={product.iconImage} alt={product.title} className="w-[200px] h-[200px] object-contain" />
+                    ) : (
+                      <product.icon size={200} className="text-white" />
+                    )}
                   </div>
                 </div>
               </div>
