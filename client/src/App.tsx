@@ -12,7 +12,7 @@ import ProductsIndex from "@/pages/ProductsIndex";
 import ProductDetail from "@/pages/ProductDetail";
 import Pricing from "@/pages/Pricing";
 import Testimonials from "@/pages/Testimonials";
-import OurWorks from "@/pages/OurWorks";
+import Industries from "@/pages/OurWorks";
 import AboutUs from "@/pages/AboutUs";
 
 function Router() {
@@ -24,7 +24,7 @@ function Router() {
         <Route path="/products/:slug" component={ProductDetail} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/testimonials" component={Testimonials} />
-        <Route path="/works" component={OurWorks} />
+        <Route path="/industries" component={Industries} />
         <Route path="/about" component={AboutUs} />
         <Route component={NotFound} />
       </Switch>
