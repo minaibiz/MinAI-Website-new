@@ -47,7 +47,7 @@ export const products: Product[] = [
   {
     id: "functional-website",
     slug: "functional-website",
-    title: "Functional Website",
+    title: "Talking Website",
     subtitle: "Get a lead-generating Website in just days.",
     icon: Globe,
     description: "High-converting funnels and websites built into one platform.",
@@ -65,7 +65,7 @@ export const products: Product[] = [
       { title: "Instant SMS Conversations", description: "Chat widget starts text conversations directly to your phone." }
     ],
     whatIs: {
-      title: "What is the functional website?",
+      title: "What is the talking website?",
       points: [
         { title: "Actually Get Found Online", description: "We ensure all our websites are properly indexed to appear on Google. We follow all of Google's best practices for SEO, optimized for page speed." },
         { title: "Showcase Your Best Reviews", description: "An online reputation is the most important part of any business. We showcase your top reviews on every page." },
