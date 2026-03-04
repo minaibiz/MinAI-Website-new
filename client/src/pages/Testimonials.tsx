@@ -22,8 +22,8 @@ export default function Testimonials() {
         {/* HERO */}
         <AnimatedReveal className="text-center mb-16 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-4 tracking-tight text-slate-900 leading-[1.1]">
-            We don't need to "sell" you.<br />
-            <span className="text-blue-700">Our clients do it for us.</span>
+            We Don't "Sell" You.<br />
+            <span className="text-blue-700">Our Clients Do It For Us.</span>
           </h1>
           <p className="text-xl text-slate-600 mb-8 font-medium leading-relaxed">
             Marketing agencies love to talk a big game. We prefer results. Here are real business owners using MinAI to print money.
