@@ -17,8 +17,8 @@ export default function AboutUs() {
         {/* HERO */}
         <AnimatedReveal className="max-w-4xl mb-20">
           <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-6 text-slate-900 tracking-tight leading-[1.1]">
-            We don't build "websites".<br />
-            <span className="text-blue-700">We build infrastructure.</span>
+            We Don't Do "Marketing".<br />
+            <span className="text-blue-700">We Build Infrastructure.</span>
           </h1>
           <div className="space-y-4">
             <p className="text-xl text-slate-600 leading-relaxed font-medium">
