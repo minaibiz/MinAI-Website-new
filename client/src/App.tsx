@@ -13,6 +13,7 @@ import ProductDetail from "@/pages/ProductDetail";
 import Pricing from "@/pages/Pricing";
 import Testimonials from "@/pages/Testimonials";
 import Industries from "@/pages/OurWorks";
+import IndustryDetail from "@/pages/IndustryDetail";
 import AboutUs from "@/pages/AboutUs";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
         <Route path="/pricing" component={Pricing} />
         <Route path="/testimonials" component={Testimonials} />
         <Route path="/industries" component={Industries} />
+        <Route path="/industries/:slug" component={IndustryDetail} />
         <Route path="/about" component={AboutUs} />
         <Route component={NotFound} />
       </Switch>

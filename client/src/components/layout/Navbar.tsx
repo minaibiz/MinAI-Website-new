@@ -7,10 +7,10 @@ import { products } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 
 const industries = [
-  { name: "Local Service Contractors", sub: "HVAC, Roofing, Plumbing, Solar", href: "/industries#local-service-contractors" },
-  { name: "Real Estate Developers", sub: "Condos, Subdivisions, Commercial", href: "/industries#real-estate-developers" },
-  { name: "Agencies & Brokerages", sub: "Real Estate, Mortgage, Insurance", href: "/industries#agencies-brokerages" },
-  { name: "Personal Injury Law Firms", sub: "MVA, Slip & Fall, Workers Comp", href: "/industries#personal-injury-law-firms" },
+  { name: "Local Service Contractors", sub: "HVAC, Roofing, Plumbing, Solar", href: "/industries/local-service-contractors" },
+  { name: "Real Estate Developers", sub: "Condos, Subdivisions, Commercial", href: "/industries/real-estate-developers" },
+  { name: "Agencies & Brokerages", sub: "Real Estate, Mortgage, Insurance", href: "/industries/agencies-brokerages" },
+  { name: "Personal Injury Law Firms", sub: "MVA, Slip & Fall, Workers Comp", href: "/industries/personal-injury-law-firms" },
 ];
 
 export function Navbar() {
