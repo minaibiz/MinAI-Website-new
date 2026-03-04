@@ -12,7 +12,7 @@ export default function Pricing() {
 
         {/* HEADER */}
         <AnimatedReveal className="text-center mb-16">
-          <h1 className="text-4xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 tracking-tight leading-[1.1]">
             Stop Paying For<br /><span className="text-blue-700">10 Different Tools.</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">

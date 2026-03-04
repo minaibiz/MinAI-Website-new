@@ -9,7 +9,7 @@ export default function ProductsIndex() {
     <div className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <AnimatedReveal>
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 tracking-tight leading-[1.1]">
             The Full MinAI Stack
           </h1>
           <p className="text-xl text-slate-600 font-medium leading-relaxed">

@@ -26,7 +26,7 @@ export default function ProductDetail() {
       {/* Product Title Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
         <AnimatedReveal>
-          <h1 className="text-4xl md:text-7xl font-display font-extrabold text-slate-900 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-extrabold text-slate-900 tracking-tight leading-[1.1]">
             {product.title}
           </h1>
         </AnimatedReveal>
