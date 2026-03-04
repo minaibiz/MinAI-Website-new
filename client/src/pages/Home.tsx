@@ -251,31 +251,35 @@ export default function Home() {
               {
                 title: "Local Service Contractors",
                 sub: "HVAC, Roofing, Plumbing, Solar",
-                image: "/industry-1.png"
+                image: "/industry-1.png",
+                slug: "local-service-contractors"
               },
               {
                 title: "Real Estate Developers",
                 sub: "Condos, Subdivisions, Commercial",
-                image: "/industry-2.png"
+                image: "/industry-2.png",
+                slug: "real-estate-developers"
               },
               {
                 title: "Agencies &\nBrokerages",
                 sub: "Real Estate, Mortgage, Insurance",
-                image: "/industry-3.png"
+                image: "/industry-3.png",
+                slug: "agencies-brokerages"
               },
               {
                 title: "Personal Injury\nLaw Firms",
                 sub: "MVA, Slip & Fall, Workers Comp",
-                image: "/industry-4.png"
+                image: "/industry-4.png",
+                slug: "personal-injury-law-firms"
               }
             ].map((industry, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+              <Link key={i} href={`/industries/${industry.slug}`} className="p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center group block">
                 <div className="h-44 flex items-center justify-center mb-6">
-                  <img src={industry.image} alt={industry.title} className="max-h-44 w-auto object-contain" />
+                  <img src={industry.image} alt={industry.title} className="max-h-44 w-auto object-contain group-hover:scale-105 transition-transform" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2 whitespace-pre-line">{industry.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 whitespace-pre-line group-hover:text-blue-700 transition-colors">{industry.title}</h3>
                 <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">{industry.sub}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

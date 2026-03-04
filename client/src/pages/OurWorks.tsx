@@ -1,194 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, CheckCircle, ArrowRight } from "lucide-react";
+import React from "react";
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { useModal } from "@/context/ModalContext";
-
-const industriesData = [
-  {
-    id: "local-service-contractors",
-    title: "Local Service Contractors",
-    sub: "HVAC, Roofing, Plumbing, Solar",
-    image: "/industry-1.png",
-    description:
-      "Your phone rings at 2 PM — you're on a roof. By the time you call back, they've already hired someone else. MinAI makes sure that never happens again.",
-    features: [
-      "AI answers calls & texts instantly so you never lose a lead on the job site",
-      "Automated follow-up sequences that nurture leads until they book",
-      "Missed Call Text-Back sends an instant reply while you're working",
-      "Automated Google Review requests after every completed job",
-      "One dashboard to manage all leads, bookings, and payments",
-    ],
-    stat: { value: "3x", label: "More booked jobs within 60 days" },
-  },
-  {
-    id: "real-estate-developers",
-    title: "Real Estate Developers",
-    sub: "Condos, Subdivisions, Commercial",
-    image: "/industry-2.png",
-    description:
-      "Selling out a new phase shouldn't take months of chasing cold leads. MinAI builds a system that pre-qualifies buyers and fills your pipeline automatically.",
-    features: [
-      "High-converting landing pages for each project phase",
-      "AI chatbot that pre-qualifies buyers 24/7 and books showings",
-      "Automated drip campaigns to nurture interested prospects",
-      "Database reactivation to wake up past inquiries for new phases",
-      "Real-time reporting on lead sources and conversion rates",
-    ],
-    stat: { value: "50%", label: "Faster sell-out on new phases" },
-  },
-  {
-    id: "agencies-brokerages",
-    title: "Agencies & Brokerages",
-    sub: "Real Estate, Mortgage, Insurance",
-    image: "/industry-3.png",
-    description:
-      "Your agents are busy closing deals, not following up on every inquiry. MinAI handles the grunt work so your team can focus on what they do best — selling.",
-    features: [
-      "Unified inbox for all channels — SMS, email, Facebook, Instagram",
-      "Automated lead distribution and round-robin assignment",
-      "AI-powered speed-to-lead — respond in seconds, not hours",
-      "Reputation management with automated review collection",
-      "Social media auto-posting to keep your brand visible",
-    ],
-    stat: { value: "40%", label: "Increase in agent productivity" },
-  },
-  {
-    id: "personal-injury-law-firms",
-    title: "Personal Injury Law Firms",
-    sub: "MVA, Slip & Fall, Workers Comp",
-    image: "/industry-4.png",
-    description:
-      "Every missed call is a potential case walking out the door. MinAI ensures every inquiry is captured, qualified, and followed up — even at 3 AM.",
-    features: [
-      "24/7 AI intake that captures case details and qualifies leads",
-      "Instant text-back on missed calls with pre-screening questions",
-      "Automated follow-up sequences for prospects who don't convert immediately",
-      "HIPAA-aware communication workflows",
-      "Detailed case source tracking and ROI reporting",
-    ],
-    stat: { value: "2x", label: "More qualified case intakes per month" },
-  },
-];
-
-function IndustryAccordion({
-  industry,
-  isOpen,
-  onToggle,
-}: {
-  industry: (typeof industriesData)[0];
-  isOpen: boolean;
-  onToggle: () => void;
-}) {
-  const { openDemoModal } = useModal();
-
-  return (
-    <div
-      id={industry.id}
-      className={`rounded-3xl border transition-all duration-300 ${
-        isOpen
-          ? "border-blue-200 shadow-xl shadow-blue-600/5 bg-white"
-          : "border-slate-100 bg-white hover:shadow-md"
-      }`}
-    >
-      <button
-        onClick={onToggle}
-        className="w-full p-6 md:p-8 flex items-center gap-6 text-left"
-      >
-        <div className="h-20 w-20 shrink-0 flex items-center justify-center">
-          <img
-            src={industry.image}
-            alt={industry.title}
-            className="max-h-20 w-auto object-contain"
-          />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900">
-            {industry.title}
-          </h3>
-          <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mt-1">
-            {industry.sub}
-          </p>
-        </div>
-        <ChevronDown
-          className={`w-6 h-6 text-slate-400 shrink-0 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden"
-          >
-            <div className="px-6 md:px-8 pb-8 pt-0">
-              <div className="border-t border-slate-100 pt-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="md:col-span-2">
-                    <p className="text-lg text-slate-600 font-medium leading-relaxed mb-6">
-                      {industry.description}
-                    </p>
-                    <ul className="space-y-3 mb-8">
-                      {industry.features.map((feature, i) => (
-                        <li
-                          key={i}
-                          className="flex gap-3 text-slate-900 font-medium"
-                        >
-                          <CheckCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        openDemoModal();
-                      }}
-                      className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold text-sm transition-all shadow-lg shadow-blue-600/20 hover:-translate-y-0.5 flex items-center gap-2 group"
-                    >
-                      Get Started
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <div className="text-center p-8 rounded-2xl bg-blue-50 border border-blue-100 w-full">
-                      <div className="text-5xl font-extrabold text-blue-700 mb-2">
-                        {industry.stat.value}
-                      </div>
-                      <div className="text-sm font-bold text-slate-600">
-                        {industry.stat.label}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
+import { industriesData } from "@/pages/IndustryDetail";
 
 export default function Industries() {
   const { openDemoModal } = useModal();
-  const [openId, setOpenId] = useState<string | null>(null);
-
-  // Auto-open section from URL hash
-  useEffect(() => {
-    const hash = window.location.hash.slice(1);
-    if (hash && industriesData.some((ind) => ind.id === hash)) {
-      setOpenId(hash);
-      setTimeout(() => {
-        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 100);
-    }
-  }, []);
 
   return (
     <div className="py-16 relative">
@@ -204,17 +22,38 @@ export default function Industries() {
         </AnimatedReveal>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-        <div className="space-y-4">
-          {industriesData.map((industry) => (
-            <AnimatedReveal key={industry.id} delay={0.05}>
-              <IndustryAccordion
-                industry={industry}
-                isOpen={openId === industry.id}
-                onToggle={() =>
-                  setOpenId(openId === industry.id ? null : industry.id)
-                }
-              />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {industriesData.map((industry, i) => (
+            <AnimatedReveal key={industry.slug} delay={i * 0.05}>
+              <Link
+                href={`/industries/${industry.slug}`}
+                className="group block p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
+              >
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="h-24 w-24 shrink-0 flex items-center justify-center">
+                    <img
+                      src={industry.image}
+                      alt={industry.title}
+                      className="max-h-24 w-auto object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                      {industry.title}
+                    </h3>
+                    <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mt-1">
+                      {industry.sub}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-slate-600 font-medium leading-relaxed mb-6">
+                  {industry.description}
+                </p>
+                <div className="flex items-center gap-2 text-blue-600 font-bold text-sm group-hover:gap-3 transition-all">
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
             </AnimatedReveal>
           ))}
         </div>
