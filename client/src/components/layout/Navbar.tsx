@@ -84,13 +84,15 @@ export function Navbar() {
                         className="group/item p-4 rounded-2xl hover:bg-primary/5 transition-colors"
                       >
                         <div className="flex items-start gap-4">
-                          <div className="h-10 w-10 shrink-0 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center group-hover/item:scale-110 transition-transform">
-                            {product.iconImage ? (
-                              <img src={product.iconImage} alt={product.title} className="w-5 h-5 object-contain" />
-                            ) : (
+                          {product.iconImage ? (
+                            <div className="h-10 w-10 shrink-0 group-hover/item:scale-110 transition-transform">
+                              <img src={product.iconImage} alt={product.title} className="w-10 h-10 object-contain" />
+                            </div>
+                          ) : (
+                            <div className="h-10 w-10 shrink-0 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center group-hover/item:scale-110 transition-transform">
                               <product.icon size={20} />
-                            )}
-                          </div>
+                            </div>
+                          )}
                           <div>
                             <div className="text-sm font-bold text-slate-900 group-hover/item:text-blue-700 transition-colors">{product.title}</div>
                             <div className="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed font-medium">{product.description}</div>
