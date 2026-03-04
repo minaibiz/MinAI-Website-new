@@ -12,7 +12,7 @@ export default function Industries() {
     <div className="py-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
         <AnimatedReveal>
-          <h1 className="text-4xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-4 text-slate-900 tracking-tight leading-[1.1]">
             Industries <span className="text-blue-700">We Serve.</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">

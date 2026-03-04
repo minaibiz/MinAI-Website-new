@@ -211,7 +211,7 @@ export default function IndustryDetail() {
               <p className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">
                 {industry.sub}
               </p>
-              <h1 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 leading-tight mb-6">
+              <h1 className="text-5xl md:text-7xl font-display font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
                 {industry.headline}
               </h1>
               <p className="text-xl text-slate-600 font-medium leading-relaxed mb-8">

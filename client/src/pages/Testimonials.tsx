@@ -21,7 +21,7 @@ export default function Testimonials() {
 
         {/* HERO */}
         <AnimatedReveal className="text-center mb-16 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-7xl font-display font-extrabold mb-4 uppercase tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-extrabold mb-4 tracking-tight text-slate-900 leading-[1.1]">
             We don't need to "sell" you.<br />
             <span className="text-blue-700">Our clients do it for us.</span>
           </h1>
