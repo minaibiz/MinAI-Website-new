@@ -240,6 +240,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Industries Served */}
+      <section className="py-24 bg-slate-50 border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold font-display mb-4 text-slate-900">Serving all these industries and more...</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Local Service Contractors",
+                sub: "HVAC, Roofing, Plumbing, Solar",
+                image: "/industry-1.png"
+              },
+              {
+                title: "Real Estate Developers",
+                sub: "Condos, Subdivisions, Commercial",
+                image: "/industry-2.png"
+              },
+              {
+                title: "Agencies &\nBrokerages",
+                sub: "Real Estate, Mortgage, Insurance",
+                image: "/industry-3.png"
+              },
+              {
+                title: "Personal Injury\nLaw Firms",
+                sub: "MVA, Slip & Fall, Workers Comp",
+                image: "/industry-4.png"
+              }
+            ].map((industry, i) => (
+              <div key={i} className="p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                <div className="h-44 flex items-center justify-center mb-6">
+                  <img src={industry.image} alt={industry.title} className="max-h-44 w-auto object-contain" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 whitespace-pre-line">{industry.title}</h3>
+                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">{industry.sub}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Video Section */}
       <section className="py-12 bg-background border-b border-border">
         <div className="max-w-5xl mx-auto px-6 text-center">
@@ -466,47 +507,6 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{product.title}</h3>
                 <p className="text-slate-500 leading-relaxed text-sm">{product.description}</p>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Served */}
-      <section className="py-24 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-extrabold font-display mb-4 text-slate-900">Serving all these industries and more...</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Local Service Contractors",
-                sub: "HVAC, Roofing, Plumbing, Solar",
-                image: "/industry-1.png"
-              },
-              {
-                title: "Real Estate Developers",
-                sub: "Condos, Subdivisions, Commercial",
-                image: "/industry-2.png"
-              },
-              {
-                title: "Agencies &\nBrokerages",
-                sub: "Real Estate, Mortgage, Insurance",
-                image: "/industry-3.png"
-              },
-              {
-                title: "Personal Injury\nLaw Firms",
-                sub: "MVA, Slip & Fall, Workers Comp",
-                image: "/industry-4.png"
-              }
-            ].map((industry, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
-                <div className="h-44 flex items-center justify-center mb-6">
-                  <img src={industry.image} alt={industry.title} className="max-h-44 w-auto object-contain" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2 whitespace-pre-line">{industry.title}</h3>
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">{industry.sub}</p>
-              </div>
             ))}
           </div>
         </div>
