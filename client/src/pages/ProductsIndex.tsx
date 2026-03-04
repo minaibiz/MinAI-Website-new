@@ -25,8 +25,8 @@ export default function ProductsIndex() {
             <Link href={`/products/${product.slug}`}>
               <div className="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group block h-full">
                 {product.iconImage ? (
-                  <div className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <img src={product.iconImage} alt={product.title} className="w-12 h-12 object-contain" />
+                  <div className="w-[60px] h-[60px] mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <img src={product.iconImage} alt={product.title} className="w-[60px] h-[60px] object-contain" />
                   </div>
                 ) : (
                   <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">

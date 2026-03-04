@@ -86,7 +86,7 @@ export function Navbar() {
                         <div className="flex items-start gap-4">
                           {product.iconImage ? (
                             <div className="h-10 w-10 shrink-0 group-hover/item:scale-110 transition-transform">
-                              <img src={product.iconImage} alt={product.title} className="w-10 h-10 object-contain" />
+                              <img src={product.iconImage} alt={product.title} className="w-10 h-10 object-contain rounded-lg" />
                             </div>
                           ) : (
                             <div className="h-10 w-10 shrink-0 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center group-hover/item:scale-110 transition-transform">

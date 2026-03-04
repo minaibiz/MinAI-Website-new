@@ -3,6 +3,13 @@ import {
   MousePointerClick, Search, MessageSquare
 } from "lucide-react";
 import websiteGif from "@assets/Website.gif";
+import inboxGif from "@assets/1inbox.gif";
+import starsGif from "@assets/5stars.gif";
+import missedCallGif from "@assets/Missed-call.gif";
+import businessPhoneGif from "@assets/27-Call.gif";
+import mktCampaignGif from "@assets/MKT Campaign.gif";
+import localSeoGif from "@assets/Local-seo.gif";
+import followLeadGif from "@assets/Follow-lead.gif";
 
 export interface ProductStat {
   label: string;
@@ -87,6 +94,7 @@ export const products: Product[] = [
     title: "All In One Inbox",
     subtitle: "Every conversation, in one place.",
     icon: Inbox,
+    iconImage: inboxGif,
     description: "2-Way SMS, Email, and social DMs in one unified view.",
     details: "Never lose a conversation again. Communicate with leads and customers across SMS, Email, Facebook, Instagram, and Web Chat.",
     benefits: ["Unified messaging", "Faster response times", "Zero lost leads"],
@@ -121,6 +129,7 @@ export const products: Product[] = [
     title: "5-Star Magic Review Funnel",
     subtitle: "Dominate your local search results.",
     icon: Star,
+    iconImage: starsGif,
     description: "Automated reputation management to dominate local search.",
     details: "Your reputation is your strongest marketing asset. Our automated review injector sends personalized review requests.",
     benefits: ["Automated requests", "Filter negative feedback", "Dominate local map pack"],
@@ -155,6 +164,7 @@ export const products: Product[] = [
     title: "Missed Call Text Back",
     subtitle: "Instantly capture every missed opportunity.",
     icon: PhoneMissed,
+    iconImage: missedCallGif,
     description: "Instantly text back missed callers so they don't call the next guy.",
     details: "85% of customers appreciate getting a text back after missing a call. Turn a missed call into a text conversation instantly.",
     benefits: ["Instant engagement", "Saves lost revenue", "Professional appearance"],
@@ -189,6 +199,7 @@ export const products: Product[] = [
     title: "Business Phone",
     subtitle: "Professional communication for your firm.",
     icon: Phone,
+    iconImage: businessPhoneGif,
     description: "Dedicated business line with call tracking and advanced routing.",
     details: "Build trust with a professional business number. Track calls and separate your personal life from work.",
     benefits: ["Professional number", "Call tracking", "Privacy"],
@@ -223,6 +234,7 @@ export const products: Product[] = [
     title: "Marketing Campaigns",
     subtitle: "Turn old leads into new profit.",
     icon: MousePointerClick,
+    iconImage: mktCampaignGif,
     description: "Reactivate dead leads and past clients with a single click.",
     details: "Sitting on a list of old leads? Our one-click reactivation campaigns send perfectly timed SMS and Email offers.",
     benefits: ["Zero ad spend required", "Instant ROI", "High SMS open rates"],
@@ -257,6 +269,7 @@ export const products: Product[] = [
     title: "Local SEO",
     subtitle: "Be the #1 choice in your city.",
     icon: Search,
+    iconImage: localSeoGif,
     description: "Own your local market search results with technical precision.",
     details: "We handle the complex on-site, off-site, and technical SEO required to get your business ranking at the top.",
     benefits: ["Higher organic traffic", "GMB optimization", "Technical health checks"],
@@ -291,6 +304,7 @@ export const products: Product[] = [
     title: "SMS Lead Follow-Up",
     subtitle: "Automated sequences that close.",
     icon: MessageSquare,
+    iconImage: followLeadGif,
     description: "Never let a lead go cold with automated SMS follow-up sequences.",
     details: "70% of customers buy from the first responder. Our system ensures you are always first.",
     benefits: ["Instant follow-up", "Consistent nurturing", "Higher close rates"],
