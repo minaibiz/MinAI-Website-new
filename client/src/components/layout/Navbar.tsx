@@ -6,10 +6,18 @@ import { useModal } from "@/context/ModalContext";
 import { products } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 
+const industries = [
+  { name: "Local Service Contractors", sub: "HVAC, Roofing, Plumbing, Solar", href: "/industries#local-service-contractors" },
+  { name: "Real Estate Developers", sub: "Condos, Subdivisions, Commercial", href: "/industries#real-estate-developers" },
+  { name: "Agencies & Brokerages", sub: "Real Estate, Mortgage, Insurance", href: "/industries#agencies-brokerages" },
+  { name: "Personal Injury Law Firms", sub: "MVA, Slip & Fall, Workers Comp", href: "/industries#personal-injury-law-firms" },
+];
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
   const [location] = useLocation();
   const { openDemoModal } = useModal();
 
@@ -24,12 +32,12 @@ export function Navbar() {
   useEffect(() => {
     setMobileMenuOpen(false);
     setProductsOpen(false);
+    setIndustriesOpen(false);
   }, [location]);
 
   const navLinks = [
     { name: "Pricing", href: "/pricing" },
     { name: "Testimonials", href: "/testimonials" },
-    { name: "Our Works", href: "/works" },
     { name: "About Us", href: "/about" },
   ];
 
@@ -84,6 +92,44 @@ export function Navbar() {
                             <div className="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed font-medium">{product.description}</div>
                           </div>
                         </div>
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Industries Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setIndustriesOpen(true)}
+            onMouseLeave={() => setIndustriesOpen(false)}
+          >
+            <button
+              className={`flex items-center gap-1 text-sm font-bold transition-colors hover:text-blue-700 ${location.startsWith('/industries') ? 'text-blue-700' : 'text-slate-600'}`}
+            >
+              Industries
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${industriesOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            <AnimatePresence>
+              {industriesOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[360px]"
+                >
+                  <div className="bg-white border border-black/5 rounded-3xl p-4 shadow-2xl backdrop-blur-xl space-y-1">
+                    {industries.map((industry) => (
+                      <Link
+                        key={industry.name}
+                        href={industry.href}
+                        className="group/item p-4 rounded-2xl hover:bg-primary/5 transition-colors block"
+                      >
+                        <div className="text-sm font-bold text-slate-900 group-hover/item:text-blue-700 transition-colors">{industry.name}</div>
+                        <div className="text-xs text-slate-500 mt-1 font-medium">{industry.sub}</div>
                       </Link>
                     ))}
                   </div>
@@ -147,6 +193,21 @@ export function Navbar() {
                       className="block text-sm font-semibold text-foreground"
                     >
                       {product.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="text-xs font-bold text-muted-foreground tracking-widest uppercase">Industries</div>
+                <div className="pl-4 space-y-4 border-l-2 border-black/5">
+                  {industries.map((industry) => (
+                    <Link
+                      key={industry.name}
+                      href={industry.href}
+                      className="block text-sm font-semibold text-foreground"
+                    >
+                      {industry.name}
                     </Link>
                   ))}
                 </div>
