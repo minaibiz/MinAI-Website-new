@@ -34,9 +34,9 @@ export default function ProductDetail() {
 
       {/* Optimized Hero: Vertical Stats + Demo */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-12 gap-8 items-start">
           {/* Vertical Stats Column (4/12) */}
-          <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
+          <div className="lg:col-span-4 space-y-4 flex flex-col">
             {product.stats.map((stat, i) => (
               <AnimatedReveal key={i} delay={i * 0.1} direction="right" className="flex-1">
                 <div className="bg-white border border-black/[0.03] p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col justify-center">
@@ -51,42 +51,31 @@ export default function ProductDetail() {
 
           {/* Large Demo Card (8/12) */}
           <div className="lg:col-span-8">
-            <AnimatedReveal direction="left" delay={0.2} className="h-full">
-              <div className="bg-white p-4 md:p-6 rounded-[2rem] border border-black/5 shadow-xl shadow-black/[0.02] flex flex-col h-full min-h-[400px]">
+            <AnimatedReveal direction="left" delay={0.2}>
+              <div className="bg-white p-4 md:p-6 rounded-[2rem] border border-black/5 shadow-xl shadow-black/[0.02]">
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-slate-900">See a short demo below</h3>
                   <div className="w-12 h-1 bg-blue-700/20 rounded-full mx-auto mt-2" />
                 </div>
 
-                <div className="flex-1 rounded-[1.5rem] bg-slate-900 overflow-hidden relative">
+                <div className="aspect-video rounded-[1.5rem] bg-slate-900 overflow-hidden relative">
                   {product.demoVideoId ? (
                     <iframe
                       src={`https://drive.google.com/file/d/${product.demoVideoId}/preview`}
-                      className="w-full h-full absolute inset-0"
+                      className="absolute inset-0 w-full h-full"
                       allow="autoplay; encrypted-media"
                       allowFullScreen
                       title={`${product.title} Demo Video`}
                     />
                   ) : (
                     <>
-                      <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm z-10 group-hover:bg-slate-800/30 transition-colors">
+                      <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm z-10">
                         <button
                           onClick={openDemoModal}
                           className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform"
                         >
                           <ArrowRight size={32} />
                         </button>
-                      </div>
-                      <div className="p-8 space-y-4 opacity-40">
-                        <div className="flex items-center gap-4 border-b border-white/10 pb-4">
-                          <div className="w-8 h-8 rounded-full bg-white/20" />
-                          <div className="h-4 w-32 bg-white/20 rounded-full" />
-                        </div>
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="h-20 bg-white/10 rounded-xl" />
-                          <div className="h-20 bg-primary/20 rounded-xl border border-primary/30" />
-                        </div>
-                        <div className="h-24 bg-white/5 rounded-xl" />
                       </div>
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-[0.05] pointer-events-none">
                         {product.iconImage ? (
