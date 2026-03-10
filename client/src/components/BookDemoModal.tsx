@@ -31,21 +31,21 @@ export function BookDemoModal() {
             className="fixed inset-0 z-50 bg-black/40 backdrop-blur-md"
           />
 
-          {/* Modal */}
+          {/* Modal - scrollable container */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed left-1/2 top-1/2 z-50 w-full max-w-lg -translate-x-1/2 -translate-y-1/2 p-4"
+            className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto py-8 px-4"
           >
-            <div className="bg-white overflow-hidden rounded-3xl relative premium-shadow border border-black/5 max-h-[90vh] overflow-y-auto">
+            <div className="bg-white rounded-3xl relative premium-shadow border border-black/5 w-full max-w-lg my-auto" onClick={(e) => e.stopPropagation()}>
               {/* Decorative gradient top edge */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-blue-400 to-primary opacity-80 z-10" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-blue-400 to-primary opacity-80 z-10 rounded-t-3xl" />
 
               <button
                 onClick={closeDemoModal}
-                className="absolute right-4 top-4 rounded-full p-2 text-muted-foreground hover:bg-black/5 hover:text-foreground transition-colors z-20"
+                className="absolute right-4 top-4 rounded-full p-2 text-muted-foreground hover:bg-black/5 hover:text-foreground transition-colors z-20 bg-white/80 backdrop-blur-sm"
                 aria-label="Close"
               >
                 <X size={20} />
