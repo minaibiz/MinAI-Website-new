@@ -155,7 +155,15 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://app.minai.biz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-600 hover:text-blue-700 px-5 py-2.5 rounded-full font-bold text-sm transition-all border border-slate-200 hover:border-blue-200"
+          >
+            Log In
+          </a>
           <button
             onClick={openDemoModal}
             className="bg-blue-700 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/20"
@@ -228,12 +236,20 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              <a
+                href="https://app.minai.biz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-slate-600 border border-slate-200 w-full py-4 rounded-2xl font-bold mt-4 block hover:border-blue-200 hover:text-blue-700 transition-colors"
+              >
+                Log In
+              </a>
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
                   openDemoModal();
                 }}
-                className="bg-blue-700 text-white w-full py-4 rounded-2xl font-bold shadow-lg shadow-blue-700/20 mt-4"
+                className="bg-blue-700 text-white w-full py-4 rounded-2xl font-bold shadow-lg shadow-blue-700/20 mt-2"
               >
                 Book a Demo
               </button>

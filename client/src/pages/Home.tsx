@@ -292,15 +292,13 @@ export default function Home() {
             Watch This Video! <span className="text-primary">(You Need To Turn Sound On)</span>
           </h2>
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-border bg-black">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30 cursor-pointer hover:scale-110 transition-transform group">
-                <Play className="w-8 h-8 text-white fill-white ml-1 group-hover:text-primary group-hover:fill-primary transition-colors" />
-              </div>
-            </div>
-            {/* Placeholder for actual video embed */}
-            <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-4 py-2 rounded-lg text-white text-sm font-medium">
-              5 Min Demo
-            </div>
+            <iframe
+              src="https://drive.google.com/file/d/1UqAtNkMNQ94rE2JwkrEy9MOWDD2guL88/preview"
+              className="w-full h-full"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="MinAI Demo Video"
+            />
           </div>
         </div>
       </section>
