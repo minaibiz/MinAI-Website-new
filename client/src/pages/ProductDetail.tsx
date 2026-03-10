@@ -58,37 +58,45 @@ export default function ProductDetail() {
                   <div className="w-12 h-1 bg-blue-700/20 rounded-full mx-auto mt-2" />
                 </div>
 
-                <div className="flex-1 rounded-[1.5rem] bg-slate-900 overflow-hidden relative group">
-                  {/* Video Mockup Simulation */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm z-10 group-hover:bg-slate-800/30 transition-colors">
-                    <button
-                      onClick={openDemoModal}
-                      className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform"
-                    >
-                      <ArrowRight size={32} />
-                    </button>
-                  </div>
-
-                  {/* UI Elements Simulation */}
-                  <div className="p-8 space-y-4 opacity-40">
-                    <div className="flex items-center gap-4 border-b border-white/10 pb-4">
-                      <div className="w-8 h-8 rounded-full bg-white/20" />
-                      <div className="h-4 w-32 bg-white/20 rounded-full" />
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="h-20 bg-white/10 rounded-xl" />
-                      <div className="h-20 bg-primary/20 rounded-xl border border-primary/30" />
-                    </div>
-                    <div className="h-24 bg-white/5 rounded-xl" />
-                  </div>
-
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-[0.05] pointer-events-none">
-                    {product.iconImage ? (
-                      <img src={product.iconImage} alt={product.title} className="w-[200px] h-[200px] object-contain" />
-                    ) : (
-                      <product.icon size={200} className="text-white" />
-                    )}
-                  </div>
+                <div className="flex-1 rounded-[1.5rem] bg-slate-900 overflow-hidden relative">
+                  {product.demoVideoId ? (
+                    <iframe
+                      src={`https://drive.google.com/file/d/${product.demoVideoId}/preview`}
+                      className="w-full h-full absolute inset-0"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title={`${product.title} Demo Video`}
+                    />
+                  ) : (
+                    <>
+                      <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm z-10 group-hover:bg-slate-800/30 transition-colors">
+                        <button
+                          onClick={openDemoModal}
+                          className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform"
+                        >
+                          <ArrowRight size={32} />
+                        </button>
+                      </div>
+                      <div className="p-8 space-y-4 opacity-40">
+                        <div className="flex items-center gap-4 border-b border-white/10 pb-4">
+                          <div className="w-8 h-8 rounded-full bg-white/20" />
+                          <div className="h-4 w-32 bg-white/20 rounded-full" />
+                        </div>
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="h-20 bg-white/10 rounded-xl" />
+                          <div className="h-20 bg-primary/20 rounded-xl border border-primary/30" />
+                        </div>
+                        <div className="h-24 bg-white/5 rounded-xl" />
+                      </div>
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-[0.05] pointer-events-none">
+                        {product.iconImage ? (
+                          <img src={product.iconImage} alt={product.title} className="w-[200px] h-[200px] object-contain" />
+                        ) : (
+                          <product.icon size={200} className="text-white" />
+                        )}
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </AnimatedReveal>

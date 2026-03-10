@@ -43,6 +43,7 @@ export interface Product {
   subtitle: string;
   icon: any;
   iconImage?: string;
+  demoVideoId?: string;
   description: string;
   details: string;
   benefits: string[];
@@ -95,6 +96,7 @@ export const products: Product[] = [
     subtitle: "Every conversation, in one place.",
     icon: Inbox,
     iconImage: inboxGif,
+    demoVideoId: "1ZR21PFFuygeQqeGO9BpxtZLmeC-4nr73",
     description: "2-Way SMS, Email, and social DMs in one unified view.",
     details: "Never lose a conversation again. Communicate with leads and customers across SMS, Email, Facebook, Instagram, and Web Chat.",
     benefits: ["Unified messaging", "Faster response times", "Zero lost leads"],
@@ -235,6 +237,7 @@ export const products: Product[] = [
     subtitle: "Turn old leads into new profit.",
     icon: MousePointerClick,
     iconImage: mktCampaignGif,
+    demoVideoId: "1UqAtNkMNQ94rE2JwkrEy9MOWDD2guL88",
     description: "Reactivate dead leads and past clients with a single click.",
     details: "Sitting on a list of old leads? Our one-click reactivation campaigns send perfectly timed SMS and Email offers.",
     benefits: ["Zero ad spend required", "Instant ROI", "High SMS open rates"],
@@ -270,6 +273,7 @@ export const products: Product[] = [
     subtitle: "Be the #1 choice in your city.",
     icon: Search,
     iconImage: localSeoGif,
+    demoVideoId: "1dUFVmVjlhp2OEDQedK-v7V_0_9qaAiRR",
     description: "Own your local market search results with technical precision.",
     details: "We handle the complex on-site, off-site, and technical SEO required to get your business ranking at the top.",
     benefits: ["Higher organic traffic", "GMB optimization", "Technical health checks"],
@@ -305,6 +309,7 @@ export const products: Product[] = [
     subtitle: "Automated sequences that close.",
     icon: MessageSquare,
     iconImage: followLeadGif,
+    demoVideoId: "1b5rEUUIhjSzt0OHPtMfVMLLLzGlr4uFU",
     description: "Never let a lead go cold with automated SMS follow-up sequences.",
     details: "70% of customers buy from the first responder. Our system ensures you are always first.",
     benefits: ["Instant follow-up", "Consistent nurturing", "Higher close rates"],
