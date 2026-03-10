@@ -34,13 +34,13 @@ export default function ProductDetail() {
 
       {/* Optimized Hero: Vertical Stats + Demo */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 items-start">
+        <div className="grid lg:grid-cols-12 gap-8 items-center">
           {/* Vertical Stats Column (4/12) */}
-          <div className="lg:col-span-4 space-y-4 flex flex-col">
+          <div className="lg:col-span-4 grid grid-rows-3 gap-4">
             {product.stats.map((stat, i) => (
-              <AnimatedReveal key={i} delay={i * 0.1} direction="right" className="flex-1">
-                <div className="bg-white border border-black/[0.03] p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col justify-center">
-                  <div className="text-3xl font-extrabold text-blue-700 mb-2">{stat.value}</div>
+              <AnimatedReveal key={i} delay={i * 0.1} direction="right">
+                <div className="bg-white border border-black/[0.03] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center text-center">
+                  <div className="text-4xl font-extrabold text-blue-700 mb-2">{stat.value}</div>
                   <p className="text-slate-600 font-bold text-sm leading-snug">
                     {stat.label}
                   </p>
