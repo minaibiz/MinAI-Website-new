@@ -414,15 +414,15 @@ export default function Home() {
                   Explore Capture Tools <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-              <div className="order-1 md:order-2 bg-secondary rounded-3xl p-8 border border-border aspect-square flex items-center justify-center">
-                <LayoutDashboard className="w-48 h-48 text-muted-foreground/20" />
+              <div className="order-1 md:order-2 rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+                <img src="/MinAI-GIF-1.gif" alt="Capture Every Opportunity" className="w-full h-full object-cover" />
               </div>
             </div>
 
             {/* Phase 2: Nurture */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="bg-secondary rounded-3xl p-8 border border-border aspect-square flex items-center justify-center">
-                <MessageSquare className="w-48 h-48 text-muted-foreground/20" />
+              <div className="rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+                <img src="/MinAI-GIF-2.gif" alt="Nurture On Autopilot" className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wider mb-4">
@@ -482,8 +482,8 @@ export default function Home() {
                   Explore Scale Tools <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-              <div className="order-1 md:order-2 bg-secondary rounded-3xl p-8 border border-border aspect-square flex items-center justify-center">
-                <Star className="w-48 h-48 text-muted-foreground/20" />
+              <div className="order-1 md:order-2 rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+                <img src="/MinAI-GIF-3.gif" alt="Close & Scale Reputation" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
