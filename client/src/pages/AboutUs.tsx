@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useModal } from "@/context/ModalContext";
@@ -6,6 +6,7 @@ import founderImg from "@assets/MinAI Founder.jpg";
 
 export default function AboutUs() {
   const { openDemoModal } = useModal();
+  useEffect(() => { document.title = "About Us | MinAI"; }, []);
 
   return (
     <div className="py-16 bg-background relative overflow-hidden">

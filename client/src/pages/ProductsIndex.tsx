@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "wouter";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { products } from "@/lib/data";
 import { ArrowRight } from "lucide-react";
 
 export default function ProductsIndex() {
+  useEffect(() => { document.title = "Products | MinAI"; }, []);
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <AnimatedReveal>

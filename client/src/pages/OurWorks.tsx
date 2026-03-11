@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
@@ -7,6 +7,7 @@ import { industriesData } from "@/pages/IndustryDetail";
 
 export default function Industries() {
   const { openDemoModal } = useModal();
+  useEffect(() => { document.title = "Industries | MinAI"; }, []);
 
   return (
     <div className="py-16 relative">

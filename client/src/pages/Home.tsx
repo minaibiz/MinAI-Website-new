@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import {
   ArrowRight, CheckCircle, Play, Star, Zap, Shield, Clock,
@@ -120,6 +120,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 
 export default function Home() {
   const { openDemoModal } = useModal();
+  useEffect(() => { document.title = "MinAI - AI-Powered Marketing Automation for Small Businesses"; }, []);
 
   // Danh sách icon trải đều khắp hero, nhiều hơn để tạo density như screenshot
   const floatingIcons = [

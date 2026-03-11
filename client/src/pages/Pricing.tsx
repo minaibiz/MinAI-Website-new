@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { Check } from "lucide-react";
 import { useModal } from "@/context/ModalContext";
 
 export default function Pricing() {
   const { openDemoModal } = useModal();
+  useEffect(() => { document.title = "Pricing | MinAI"; }, []);
 
   return (
     <div className="py-16 relative">
