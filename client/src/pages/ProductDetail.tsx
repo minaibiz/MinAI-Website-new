@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRoute, Link } from "wouter";
 import { motion } from "framer-motion";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
@@ -11,6 +11,7 @@ export default function ProductDetail() {
   const { openDemoModal } = useModal();
 
   const product = products.find(p => p.slug === params?.slug);
+  useEffect(() => { document.title = product ? `${product.title} | MinAI` : "Product Not Found | MinAI"; }, [product]);
 
   if (!product) {
     return (

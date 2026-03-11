@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRoute, Link } from "wouter";
 import { CheckCircle, ArrowRight, ArrowLeft, Zap, Shield, BarChart, Clock } from "lucide-react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
@@ -186,6 +186,7 @@ export default function IndustryDetail() {
   const { openDemoModal } = useModal();
 
   const industry = industriesData.find((ind) => ind.slug === params?.slug);
+  useEffect(() => { document.title = industry ? `${industry.title} | MinAI` : "Industry Not Found | MinAI"; }, [industry]);
 
   if (!industry) {
     return (
