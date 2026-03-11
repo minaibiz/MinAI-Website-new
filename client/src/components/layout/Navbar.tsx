@@ -37,7 +37,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Pricing", href: "/pricing" },
-    { name: "Testimonials", href: "/testimonials" },
+    // { name: "Testimonials", href: "/testimonials" },
     { name: "About Us", href: "/about" },
   ];
 

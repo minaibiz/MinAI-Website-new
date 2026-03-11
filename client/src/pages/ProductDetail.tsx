@@ -32,34 +32,34 @@ export default function ProductDetail() {
         </AnimatedReveal>
       </div>
 
-      {/* Optimized Hero: Vertical Stats + Demo */}
+      {/* Optimized Hero: Stats + Demo */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 items-center">
-          {/* Vertical Stats Column (4/12) */}
-          <div className="lg:col-span-4 grid grid-rows-3 gap-4">
-            {product.stats.map((stat, i) => (
-              <AnimatedReveal key={i} delay={i * 0.1} direction="right">
-                <div className="bg-white border border-black/[0.03] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center text-center">
-                  <div className="text-4xl font-extrabold text-blue-700 mb-2">{stat.value}</div>
-                  <p className="text-slate-600 font-bold text-sm leading-snug">
-                    {stat.label}
-                  </p>
-                </div>
-              </AnimatedReveal>
-            ))}
-          </div>
+        {product.demoVideoId ? (
+          <div className="grid lg:grid-cols-12 gap-8 items-center">
+            {/* Vertical Stats Column (4/12) */}
+            <div className="lg:col-span-4 grid grid-rows-3 gap-4">
+              {product.stats.map((stat, i) => (
+                <AnimatedReveal key={i} delay={i * 0.1} direction="right">
+                  <div className="bg-white border border-black/[0.03] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center text-center">
+                    <div className="text-4xl font-extrabold text-blue-700 mb-2">{stat.value}</div>
+                    <p className="text-slate-600 font-bold text-sm leading-snug">
+                      {stat.label}
+                    </p>
+                  </div>
+                </AnimatedReveal>
+              ))}
+            </div>
 
-          {/* Large Demo Card (8/12) */}
-          <div className="lg:col-span-8">
-            <AnimatedReveal direction="left" delay={0.2}>
-              <div className="bg-white p-4 md:p-6 rounded-[2rem] border border-black/5 shadow-xl shadow-black/[0.02]">
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-slate-900">See a short demo below</h3>
-                  <div className="w-12 h-1 bg-blue-700/20 rounded-full mx-auto mt-2" />
-                </div>
+            {/* Large Demo Card (8/12) */}
+            <div className="lg:col-span-8">
+              <AnimatedReveal direction="left" delay={0.2}>
+                <div className="bg-white p-4 md:p-6 rounded-[2rem] border border-black/5 shadow-xl shadow-black/[0.02]">
+                  <div className="text-center mb-6">
+                    <h3 className="text-xl font-bold text-slate-900">See a short demo below</h3>
+                    <div className="w-12 h-1 bg-blue-700/20 rounded-full mx-auto mt-2" />
+                  </div>
 
-                <div className="aspect-video rounded-[1.5rem] bg-slate-900 overflow-hidden relative">
-                  {product.demoVideoId ? (
+                  <div className="aspect-video rounded-[1.5rem] bg-slate-900 overflow-hidden relative">
                     <iframe
                       src={`https://drive.google.com/file/d/${product.demoVideoId}/preview`}
                       className="absolute inset-0 w-full h-full"
@@ -67,30 +67,26 @@ export default function ProductDetail() {
                       allowFullScreen
                       title={`${product.title} Demo Video`}
                     />
-                  ) : (
-                    <>
-                      <div className="absolute inset-0 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm z-10">
-                        <button
-                          onClick={openDemoModal}
-                          className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform"
-                        >
-                          <ArrowRight size={32} />
-                        </button>
-                      </div>
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-[0.05] pointer-events-none">
-                        {product.iconImage ? (
-                          <img src={product.iconImage} alt={product.title} className="w-[200px] h-[200px] object-contain" />
-                        ) : (
-                          <product.icon size={200} className="text-white" />
-                        )}
-                      </div>
-                    </>
-                  )}
+                  </div>
                 </div>
-              </div>
-            </AnimatedReveal>
+              </AnimatedReveal>
+            </div>
           </div>
-        </div>
+        ) : (
+          /* No video: stats displayed horizontally */
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {product.stats.map((stat, i) => (
+              <AnimatedReveal key={i} delay={i * 0.1} direction="up">
+                <div className="bg-white border border-black/[0.03] p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center text-center">
+                  <div className="text-5xl font-extrabold text-blue-700 mb-3">{stat.value}</div>
+                  <p className="text-slate-600 font-bold text-sm leading-snug">
+                    {stat.label}
+                  </p>
+                </div>
+              </AnimatedReveal>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Diagonal Divider Section */}
