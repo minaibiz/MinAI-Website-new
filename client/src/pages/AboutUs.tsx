@@ -2,7 +2,6 @@ import React from "react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useModal } from "@/context/ModalContext";
-import founderImg from "@assets/MinAI Founder.jpg";
 
 export default function AboutUs() {
   const { openDemoModal } = useModal();
@@ -57,7 +56,7 @@ export default function AboutUs() {
 
           <AnimatedReveal direction="left" delay={0.2}>
             <div className="aspect-square rounded-3xl bg-slate-50 border border-slate-100 shadow-sm overflow-hidden relative group">
-              <img src={founderImg} alt="MinAI Founder" className="w-full h-full object-cover" />
+              <img src="/founder.jpg" alt="MinAI Founder" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-blue-500/5 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </div>
           </AnimatedReveal>
