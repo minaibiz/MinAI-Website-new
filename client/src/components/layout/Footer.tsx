@@ -32,7 +32,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
-              <li><Link href="/testimonials" className="text-muted-foreground hover:text-primary transition-colors">Success Stories</Link></li>
+              {/* <li><Link href="/testimonials" className="text-muted-foreground hover:text-primary transition-colors">Success Stories</Link></li> */}
             </ul>
           </div>
 
