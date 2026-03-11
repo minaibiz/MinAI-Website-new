@@ -414,14 +414,14 @@ export default function Home() {
                   Explore Capture Tools <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-              <div className="order-1 md:order-2 rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+              <div className="order-1 md:order-2 rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
                 <img src="/MinAI-GIF-1.gif" alt="Capture Every Opportunity" className="w-full h-full object-cover" />
               </div>
             </div>
 
             {/* Phase 2: Nurture */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+              <div className="rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
                 <img src="/MinAI-GIF-2.gif" alt="Nurture On Autopilot" className="w-full h-full object-cover" />
               </div>
               <div>
@@ -482,7 +482,7 @@ export default function Home() {
                   Explore Scale Tools <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-              <div className="order-1 md:order-2 rounded-3xl overflow-hidden border border-border aspect-square flex items-center justify-center">
+              <div className="order-1 md:order-2 rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
                 <img src="/MinAI-GIF-3.gif" alt="Close & Scale Reputation" className="w-full h-full object-cover" />
               </div>
             </div>
