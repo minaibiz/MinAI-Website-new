@@ -5,7 +5,10 @@ import { useModal } from "@/context/ModalContext";
 
 export default function Pricing() {
   const { openDemoModal } = useModal();
-  useEffect(() => { document.title = "Pricing | MinAI"; }, []);
+  
+  useEffect(() => { 
+    document.title = "Pricing | MinAI"; 
+  }, []);
 
   return (
     <div className="py-16 relative">
@@ -87,7 +90,7 @@ export default function Pricing() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">THE GROWTH MACHINE</h3>
               <p className="text-sm text-slate-600 mb-6 font-medium">Complete business infrastructure.</p>
-              <div className="text-4xl font-black text-slate-900 mb-2">$497 <span className="text-base text-slate-400 font-normal">/ month</span></div>
+              <div className="text-4xl font-black text-slate-900 mb-2">$997 <span className="text-base text-slate-400 font-normal">/ month</span></div>
               <p className="text-xs text-slate-400 mb-8 font-bold uppercase tracking-wider">+ Setup Fee</p>
 
               <ul className="space-y-3 mb-8 flex-1">
@@ -131,7 +134,17 @@ export default function Pricing() {
             </AnimatedReveal>
             <AnimatedReveal direction="left" delay={0.3}>
               <h4 className="text-base font-bold text-slate-900 mb-2">Is there a setup fee?</h4>
-              <p className="text-slate-500 text-sm leading-relaxed">DIY is free. If you want our team to build your system from scratch (Done-For-You), there is a small one-time fee.</p>
+              <p className="text-slate-500 text-sm leading-relaxed">
+                DIY is free. Looking for a Done-For-You system with monthly maintenance? Check out our offers at{" "}
+                <a 
+                  href="https://100bold.co" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 font-bold hover:text-blue-800 underline underline-offset-4 transition-colors"
+                >
+                  100Bold
+                </a>.
+              </p>
             </AnimatedReveal>
           </div>
         </div>
