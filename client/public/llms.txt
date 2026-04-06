@@ -1,0 +1,48 @@
+# MinAI
+
+> AI-Powered Marketing Automation for Small Businesses & Contractors
+
+MinAI is a SaaS platform that replaces fragmented software tools (CRM, email, SMS, reputation management, booking, etc.) with a unified AI-powered marketing automation system built specifically for small businesses and contractors.
+
+## Website
+
+- Homepage: https://minai.biz
+- Products: https://minai.biz/products
+- Pricing: https://minai.biz/pricing
+- Testimonials: https://minai.biz/testimonials
+- Our Works: https://minai.biz/works
+- About Us: https://minai.biz/about
+
+## Products
+
+### Talking Website
+Get a lead-generating website in just days. SEO optimized, mobile friendly, with instant SMS chat widget.
+URL: https://minai.biz/products/functional-website
+
+### All In One Inbox
+Every conversation in one place — SMS, Email, Google Business, and social DMs in a unified dashboard.
+URL: https://minai.biz/products/all-in-one-inbox
+
+### 5-Star Magic Review Funnel
+Dominate local search results with automated review requests and smart filtering.
+URL: https://minai.biz/products/magic-review-funnel
+
+### Missed Call Text Back
+Instantly capture every missed opportunity with automatic SMS replies.
+URL: https://minai.biz/products/missed-call-text-back
+
+### Business Phone
+Professional dedicated business phone number with call tracking and privacy.
+URL: https://minai.biz/products/business-phone
+
+### Marketing Campaigns
+Turn old leads into new profit with lead revival, review injection, and holiday promos.
+URL: https://minai.biz/products/one-click-marketing
+
+### Local SEO
+Be the #1 choice in your city with on-site, off-site, and technical SEO optimization.
+URL: https://minai.biz/products/local-seo
+
+### SMS Lead Follow-Up
+Automated text sequences that close deals — instant responses, drip campaigns, and smart logic.
+URL: https://minai.biz/products/sms-lead-followup
