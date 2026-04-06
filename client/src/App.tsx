@@ -5,6 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import { ModalProvider } from "@/context/ModalContext";
+import { Analytics } from "@vercel/analytics/react";
 
 import { PageLayout } from "@/components/layout/PageLayout";
 
@@ -50,6 +51,7 @@ function App() {
       <ModalProvider>
         <Router />
         <Toaster />
+        <Analytics />
       </ModalProvider>
     </QueryClientProvider>
   );
