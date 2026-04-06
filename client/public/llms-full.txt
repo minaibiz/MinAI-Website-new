@@ -1,0 +1,344 @@
+# MinAI — Full Site Content
+
+> AI-Powered Marketing Automation for Small Businesses & Contractors
+
+MinAI is a SaaS platform that replaces fragmented software tools (CRM, email, SMS, reputation management, booking, etc.) with a unified AI-powered marketing automation system. We build the complete AI infrastructure that captures, nurtures, and closes deals on autopilot.
+
+Website: https://minai.biz
+
+---
+
+## Homepage
+
+### Hero
+**We Build The Machine That Builds Your Business.**
+
+Stop chasing leads. Stop missing calls. Stop guessing. We install the complete AI infrastructure that captures, nurtures, and closes deals on autopilot.
+
+Trusted Partners: Google, Meta, WordPress, GoDaddy, Canva
+
+### Industries We Serve
+- Local Service Contractors (HVAC, Roofing, Plumbing, Solar)
+- Real Estate Developers (Condos, Subdivisions, Commercial)
+- Agencies & Brokerages (Real Estate, Mortgage, Insurance)
+- Personal Injury Law Firms (MVA, Slip & Fall, Workers Comp)
+
+### The "Old Way" is Dead
+Stop trying to outwork a broken system.
+
+**The Amateur:**
+- Misses calls while on the job site
+- Chases "bad leads" for weeks
+- Pays for 5 different software tools
+- Relies on "word of mouth" (hope)
+
+**The System Architect (MinAI):**
+- AI answers calls & texts instantly 24/7
+- Automated follow-up until they buy
+- One platform, one price, total control
+- Predictable revenue on demand
+
+### The MinAI Ecosystem — 3 Phases
+
+**Phase 1: Capture Every Opportunity**
+Most websites are digital brochures. Ours are lead traps. We ensure you get found and nobody leaves without giving you their info.
+- High-Converting Website Design
+- Local SEO Domination
+- Missed Call Text-Back (Never lose a lead)
+- Unified Inbox (FB, IG, SMS, Email)
+
+**Phase 2: Nurture On Autopilot**
+The money is in the follow-up. Our AI chases leads for you, answers questions, and books appointments while you sleep.
+- AI Booking Bot (24/7 Appointment Setter)
+- Automated SMS & Email Sequences
+- Database Reactivation (Wake up dead leads)
+- Social Media Auto-Posting
+
+**Phase 3: Close & Scale Reputation**
+Turn happy customers into your best marketing channel. Automate reviews and payments to keep cash flow healthy.
+- Automated Google Review Requests
+- Text-to-Pay Invoicing
+- Referral Management System
+- Detailed ROI Reporting
+
+### The Process — What Working with MinAI Looks Like
+
+**Step 1 — The Demo (No Fluff):**
+No boring slides. We show you the system, the real numbers, and answer your questions in 20 minutes.
+
+**Step 2 — We Build It For You:**
+We build the site, set up the AI, and import your contacts. You focus on business, we handle the tech. (7 Days).
+
+**Step 3 — The Handoff & Launch:**
+We hand you the keys, show you the "money buttons", and launch. You start closing deals on autopilot.
+
+### FAQ
+
+**Do I need to be "tech savvy"?**
+No. If you can use email and text on your phone, you can use MinAI. We handle the heavy lifting.
+
+**Does this replace my current website?**
+It can, and it should. But if you love your current site, we can integrate our tools into it seamlessly.
+
+**Is there a long-term contract?**
+Never. We earn your business every month. Cancel anytime with a click.
+
+**How fast can I get started?**
+We can have your core system live in 7 days or less after onboarding.
+
+---
+
+## Products
+
+### Talking Website
+URL: https://minai.biz/products/functional-website
+
+Get a lead-generating website in just days. Stop relying on static brochures. We build dynamic, high-converting websites optimized for speed, SEO, and immediate lead capture.
+
+**Stats:**
+- 75% judge credibility based on website
+- 78% say a website boosted growth
+- 67% trust seamless websites
+
+**Key Features:**
+- Actually Get Found Online: We ensure all our websites are properly indexed to appear on Google. We follow all of Google's best practices for SEO, optimized for page speed.
+- Showcase Your Best Reviews: An online reputation is the most important part of any business. We showcase your top reviews on every page.
+- Mobile Friendly: 87% of customers search for local businesses on mobile. Our optimizations include clear CTAs and quick load speeds.
+- Instantly Starts SMS Conversations: Eliminate email back-and-forth for quotes. Chat widgets instantly start a text conversation with customers.
+
+---
+
+### All In One Inbox
+URL: https://minai.biz/products/all-in-one-inbox
+
+Every conversation in one place. Never lose a conversation again. Communicate with leads and customers across SMS, Email, Facebook, Instagram, and Web Chat.
+
+**Stats:**
+- 70% respond faster with one inbox
+- 61% are less overwhelmed
+- 83% become more organized
+
+**Key Features:**
+- 4-in-1 Unified Inbox: Consolidate Facebook messages, Instagram DMs, texts, and emails into one place. This ensures you never miss a lead.
+- Efficiency & Organization: Manage and prioritize communications effortlessly, reducing overwhelm and increasing responsiveness.
+- Speed-to-Lead: Get notified instantly the second a lead reaches out, allowing you to respond while intent is highest.
+- Centralized Client History: View the entire history of any customer's conversation across all platforms in one single scroll.
+
+---
+
+### 5-Star Magic Review Funnel
+URL: https://minai.biz/products/magic-review-funnel
+
+Dominate your local search results. Your reputation is your strongest marketing asset. Our automated review injector sends personalized review requests.
+
+**Stats:**
+- 97% read reviews before buying
+- 72% use Google reviews
+- 2.7x more people buy services
+
+**Key Features:**
+- 5-Star Reviews Only: Redirect customers rating below 4 stars to private feedback so you can address issues directly.
+- Automatic Follow-Up: We gently remind customers 4-5 times over four weeks until they leave their review.
+- One-Click Requests: Just enter name and phone number — our system handles the rest seamlessly.
+- Review Injector: Run campaigns to request reviews from your entire past customer list gradually.
+
+---
+
+### Missed Call Text Back
+URL: https://minai.biz/products/missed-call-text-back
+
+Instantly capture every missed opportunity. 85% of customers appreciate getting a text back after missing a call. Turn a missed call into a text conversation instantly.
+
+**Stats:**
+- 85% appreciate getting a text back
+- 72% respond to texts vs voicemails
+- 69% gain more customers
+
+**Key Features:**
+- Stand Out From Competition: Acknowledge missed calls with instant, customized messages redirecting to your website.
+- No More Lost Leads: Prevent leads from moving to the next contractor by starting an instant conversation.
+- Show Customers You Care: Show customers you're available and serious about their business.
+- Available 24/7: Our system responds even after hours, ensuring every inquiry is addressed.
+
+---
+
+### Business Phone
+URL: https://minai.biz/products/business-phone
+
+Professional communication for your firm. Build trust with a professional business number. Track calls and separate your personal life from work.
+
+**Stats:**
+- 80% more calls lead to jobs
+- 71% more likely to refer
+- 58% handle appointments better
+
+**Key Features:**
+- Legal Branding: A dedicated line builds trust and shows you're serious about professional appearance.
+- Marketing Insights: Track which marketing efforts are working based on call volume and source tracking.
+- Work-Life Balance: Maintain clear boundaries by separating professional and personal calls on a single device.
+- Enhanced Professionalism: Build trust with a dedicated number strictly for your firm.
+
+---
+
+### Marketing Campaigns
+URL: https://minai.biz/products/one-click-marketing
+
+Turn old leads into new profit. Sitting on a list of old leads? Our one-click reactivation campaigns send perfectly timed SMS and Email offers.
+
+**Stats:**
+- 98% read within 3 minutes
+- 30% result in immediate sales
+- 62% likely to engage with SMS promotions
+
+**Key Features:**
+- Reactivate Dead Leads: Run campaigns to get past leads through the door again instantly with targeted offers.
+- Seasonal Sales Boost: Use holiday promos to rekindle interest and boost seasonal revenue significantly.
+- Repeat Business: Nurture existing clients to encourage loyalty and long-term profit through consistent engagement.
+- Automated Review Injection: Our system sends review requests that are read within 3 minutes, boosting your reputation.
+
+---
+
+### Local SEO
+URL: https://minai.biz/products/local-seo
+
+Be the #1 choice in your city. We handle the complex on-site, off-site, and technical SEO required to get your business ranking at the top.
+
+**Stats:**
+- 93% use Google to find local businesses
+- 97% learn about companies online
+- 46% searches have local purchase intent
+
+**Key Features:**
+- On-Site Optimization: Focus on content, keyword rankings, and technical structure to align with Google's algorithms.
+- Market Visibility: Ensure your geographic targeting reaches the right local audience actively searching for your services.
+- Technical Health: Constant evaluation of site speed, security, SSL, and mobile readiness for peak performance.
+- Google Maps Domination: Maximize visibility on Google Maps so you are the #1 choice when local customers search.
+
+---
+
+### SMS Lead Follow-Up
+URL: https://minai.biz/products/sms-lead-followup
+
+Automated sequences that close. 70% of customers buy from the first responder. Our system ensures you are always first.
+
+**Stats:**
+- 70% buy from first responder
+- 5min max response time goal
+- 3x more likely to close
+
+**Key Features:**
+- Real-Time Response: Engage leads within 5 minutes when the intent is highest, significantly increasing conversion.
+- Automated Nurturing: Stay top-of-mind without manual effort or reminders, turning cold prospects into warm leads.
+- Increased ROI: Maximize the value of every dollar spent on lead acquisition by never letting a lead go cold.
+- Higher Close Rates: Automated sequences ensure no lead falls through the cracks, closing 3x more deals on average.
+
+---
+
+## Pricing
+URL: https://minai.biz/pricing
+
+**Stop Paying For 10 Different Tools.**
+One platform. One price. Unlimited growth. Replace your entire tech stack for less than the cost of your coffee budget.
+
+### What MinAI Replaces
+- Salesforce / Hubspot ($300+/mo) — INCLUDED
+- Podium / Birdeye ($250+/mo) — INCLUDED
+- ClickFunnels / Leadpages ($197/mo) — INCLUDED
+- Calendly ($15/mo) — INCLUDED
+- Mailchimp / ActiveCampaign ($100+/mo) — INCLUDED
+- Wix / WordPress Hosting ($30/mo) — INCLUDED
+- **Total Value: ~$900/mo** → MinAI: One Simple Price
+
+### The Essentials — $297/month
+For solopreneurs or those just starting. No setup fee.
+- 2-Way SMS & Email: Unified Inbox
+- Missed Call Text-Back
+- Reputation Management
+- Web Chat Widget
+- Mobile App
+- Payments: Accept CC via text
+
+### The Growth Machine — $997/month (Recommended)
+Complete business infrastructure. Setup fee applies.
+Everything in Essentials, PLUS:
+- Full Website Builder
+- Workflows & Automation
+- Database Reactivation
+- Appointment Booking
+- Unlimited Users
+- Unlimited Contacts
+- AI Content Planner
+
+### No Contracts. No Hidden Fees.
+- Cancel anytime with one click
+- Add unlimited team members
+- Send unlimited emails
+
+---
+
+## Testimonials
+URL: https://minai.biz/testimonials
+
+**We Don't "Sell" You. Our Clients Do It For Us.**
+
+### Case Studies
+
+**John D., Roofing & Solar — SAVED $10K/MO IN MISSED CALLS**
+"I'm on a roof all day. I can't answer the phone. MinAI's text-back feature literally saved my business."
+
+**Sarah M., Property Development — SOLD 4 CONDOS IN 24 HOURS**
+"We had 500 leads sitting in an Excel sheet. We uploaded them, hit 'Send', and booked 40 showings the next day."
+
+**Mark T., Injury Law Partner — WE SIGN CASES INSTANTLY**
+"Speed to lead is everything. If we don't answer in 5 mins, they're gone. MinAI answers instantly."
+
+**David L., Real Estate Broker — REPLACED LAZY AGENTS**
+"The system chases the leads automatically until they answer. My stress is gone."
+
+**Jessica B., MedSpa Owner — CANCELLED SALESFORCE**
+"I was paying for 6 different software subscriptions. MinAI replaced all of them for a fraction of the price."
+
+**Mike R., HVAC Contractor — IT PAID FOR ITSELF IN 7 DAYS**
+"I tried MinAI because there was no contract. It paid for itself in the first week."
+
+### Real Texts. Real Revenue.
+- AI engaged a lead at 9:30 PM & booked it.
+- Client reacting to our Reactivation campaign.
+- Reviews jumping from 12 to 84 in one month.
+
+---
+
+## Our Works
+URL: https://minai.biz/works
+
+We build high-performance growth systems tailored to your industry.
+
+Industries served:
+- Local Service Contractors
+- Real Estate Developers
+- Agencies & Brokerages
+- Personal Injury Law Firms
+
+---
+
+## About Us
+URL: https://minai.biz/about
+
+**We Don't Do "Marketing". We Build Infrastructure.**
+
+The world doesn't need another generic marketing agency. It needs engineers who understand that profit is the only metric that matters. We are System Architects.
+
+### Our Mission
+We got tired of watching good businesses burn money. We spent years inside the machine, watching owners get trapped by old-school "lead gen" traps — trapped answering phones all day, chasing leads that never picked up, paying for expensive leads they didn't have time to work. MinAI was built to kill that trap.
+
+### The 3 Rules We Live By
+
+1. **Profit First** — If our system doesn't make you more than it costs you, we don't want you as a client.
+2. **Zero Friction** — Automation should make your life easier, not more complex. If a 10-year old can't use it, it's broken.
+3. **Speed is Power** — If you don't answer a lead in 2 minutes, you're invisible. Our systems answer in seconds.
+
+---
+
+## Contact
+
+Book a demo at: https://minai.biz (click "Book a Demo")
