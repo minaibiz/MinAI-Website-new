@@ -56,12 +56,27 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://minai.biz/testimonials</loc>
+    <loc>https://minai.biz/industries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://minai.biz/works</loc>
+    <loc>https://minai.biz/industries/local-service-contractors</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://minai.biz/industries/real-estate-developers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://minai.biz/industries/agencies-brokerages</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://minai.biz/industries/personal-injury-law-firms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

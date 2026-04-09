@@ -22,6 +22,10 @@ function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute("href", `https://minai.biz${location === "/" ? "/" : location.replace(/\/$/, "")}`);
+    }
   }, [location]);
   return null;
 }
